@@ -1,66 +1,36 @@
-# 🛻🦖 ArquioLogic 🦖🛻
+# ArquiLogic
 
-## Sobre o Jogo
-**ArquioLogic** é um jogo interativo no qual o jogador precisa sobreviver enquanto enfrenta dinossauros que vêm em sua direção. Inspirado nos clássicos jogos de nave espacial, o diferencial é a necessidade de responder a perguntas de um quiz após ser derrotado para retornar ao jogo.
+A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
 
----
+This project was generated with a template including simple application launchers and an `ApplicationAdapter` extension that draws libGDX logo.
 
-## Autoria
-- **Autor:** Weslley H. de B. Menezes  
-- **Curso:** Sistemas de Informação - Universidade Federal de Santa Maria (UFSM)
+## Platforms
 
----
+- `core`: Main module with the application logic shared by all platforms.
+- `lwjgl3`: Primary desktop platform using LWJGL3; was called 'desktop' in older docs.
+- `html`: Web platform using GWT and WebGL. Supports only Java projects.
 
-## Comentários sobre o Processo de Desenvolvimento
+## Gradle
 
-### Planejamento e Ideia
-O desenvolvimento começou com a ideia de criar um escape room. No entanto, devido a imprevistos, decidi por um jogo mais simples e intuitivo.
+This project uses [Gradle](https://gradle.org/) to manage dependencies.
+The Gradle wrapper was included, so you can run Gradle tasks using `gradlew.bat` or `./gradlew` commands.
+Useful Gradle tasks and flags:
 
-### Tecnologias Utilizadas
-- **Linguagem:** Java  
-- **Framework:** LibGDX  
-- **IDE:** VSCode  
-- **Controle de Versão:** Git e GitHub  
+- `--continue`: when using this flag, errors will not stop the tasks from running.
+- `--daemon`: thanks to this flag, Gradle daemon will be used to run chosen tasks.
+- `--offline`: when using this flag, cached dependency archives will be used.
+- `--refresh-dependencies`: this flag forces validation of all dependencies. Useful for snapshot versions.
+- `build`: builds sources and archives of every project.
+- `cleanEclipse`: removes Eclipse project data.
+- `cleanIdea`: removes IntelliJ project data.
+- `clean`: removes `build` folders, which store compiled classes and built archives.
+- `eclipse`: generates Eclipse project data.
+- `html:dist`: compiles GWT sources. The compiled application can be found at `html/build/dist`: you can use any HTTP server to deploy it.
+- `html:superDev`: compiles GWT sources and runs the application in SuperDev mode. It will be available at [localhost:8080/html](http://localhost:8080/html). Use only during development.
+- `idea`: generates IntelliJ project data.
+- `lwjgl3:jar`: builds application's runnable jar, which can be found at `lwjgl3/build/libs`.
+- `lwjgl3:run`: starts the application.
+- `test`: runs unit tests (if any).
 
-### Desafios Encontrados
-1. **Renderização de Textos:**  
-   Encontrei problemas na compilação da versão HTML devido à biblioteca de fontes. Resolvi utilizando a `BitmapFont`.
-2. **Implementação do Quiz:**  
-   Houve dificuldades em integrar o quiz ao jogo, especialmente ao condicionar a continuidade do jogo à resposta correta.
-3. **Sobrescrita de Código:**  
-   Durante a implementação avançada, acidentalmente sobrescrevi meu código do quiz e precisei reescrevê-lo do zero.
-4. **Paradas do Jogo:**  
-   Configurar a lógica para início e fim do jogo foi desafiador por exigir um controle rigoroso.
-5. **Exploração da LibGDX:**  
-   Achar os comandos corretos e lidar com conflitos de imports consumiu tempo, mas foi superado com pesquisa e prática.
-
----
-
-## Estrutura do Projeto
-
-### **Arquiolog**
-- Gerencia as telas (`MenuScreen`, `GameScreen`, `VictoryScreen`, `GameOverScreen`).
-- Métodos principais:
-  - `startGame()`
-  - `decrementLives()`
-  - `incrementCorrectAnswers()`
-
-### **GameScreen**
-- **Componentes Utilizados:**
-  - `Dino`: Lida com movimentação e colisão dos dinossauros.
-  - `InteractiveObjectManager`: Gerencia os objetos interativos.
-  - `QuizManager`: Administra o quiz.
-  - `GameRenderer`: Renderiza o estado do jogo.
-- **Integrações com `Arquiolog`:**
-  - Ajusta vidas e controla progresso do jogo.
-
----
-
-## Referências
-1. **Material da disciplina:** [GitHub da ELC117](https://github.com/andreaInfUFSM/elc117-2024b)  
-2. **Documentação da LibGDX:** [libgdx.com](https://libgdx.com/dev/)  
-3. **Inspirações e tutoriais:**  
-   - [Canal Terminal Root](https://www.youtube.com/watch?v=2bmvlwvnirk)  
-   - Sprites gerados por IA ([ChatGPT](https://chatgpt.com/g/g-pmuQfob8d-image-generator))  
-4. **Quiz:** Baseado no material do curso.
-
+Note that most tasks that are not specific to a single project can be run with `name:` prefix, where the `name` should be replaced with the ID of a specific project.
+For example, `core:clean` removes `build` folder only from the `core` project.
