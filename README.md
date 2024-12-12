@@ -33,7 +33,7 @@ O dessenvolvimento do jogo começou com a ideia de criar um scaperoom mas com o 
 5. **A biblioteca:**
    demorei muito para encontrar os comandos e os `inports` necessários dentre tantos que a gdx e ainda mais que a linguaem disponibiliza, porem aguns estavão dando conflito.
    
-![Diagrama de Classes](diagrama1.png)
+![Diagrama de Classes](PLJ1Rjim3BtxAuIU7CmvBCTwA9fsA52WXsxPOSMm0oCphW1PScdAIplitqSvjcF71cn9ZmJvnFVWsuQ1E5GsqHQQHdqBvaFzJPGyQxLZCgvKDL8P7CCC_VLR-PgDTqqF6yVo5aRZlIT2zXESiAczTDgXHTtZU-yjWbF0fXrolwDcSAN5iVgM49ga2t_goAKNfB85dsn9PTKNYBqW7Ku5DdE0eSzFLzS3lpv4w0gaT5UJORm3rgzg7x-PkZDSGVtWfUT1FaCjQmfuT7NWPIs6RRppDF0lwUU_fRTWddnfz5c5ovvv7_Y1Hmw4wX1SuJF5zq0Krw_6nULPPeEE2IYVLLBwb5V3W1-i1rQYaD7WVsR3xYLJBLglvIO5nlmOWfTy8I2y1OcNKA5laUByZJRdjbiYUFyoQdkZ2Y7O357hHKt6glQxG2L6yld4EhNCr8kchR2GHNpqnpqwKvdoN68YmRxR3e7EpJBGZtomKEjDeRIOYd6KlSDwWMTOOQ9jBn8TDBfZEOUhUFLEWIN-34jiLc4OfVPY6nFIao37pralpVkuiq3bU03Bu_wu6PCtq-JD97cpYaQRM6ozlZdDw5fTbIWZ4DckabiPXVmH_WC0)
 
 # Estrutura do Projeto
 
