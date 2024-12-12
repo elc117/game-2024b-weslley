@@ -33,12 +33,16 @@ O desenvolvimento começou com a ideia de criar um escape room. No entanto, devi
    Configurar a lógica para início e fim do jogo foi desafiador por exigir um controle rigoroso.
 5. **Exploração da LibGDX:**  
    Achar os comandos corretos e lidar com conflitos de imports consumiu tempo, mas foi superado com pesquisa e prática.
+6. **conversão html:**
+   Tive bastante dificuldade na parte de aplicar o comando `./gradlew html:dist` pois eu estava aplicando o comando `./gradlew html:superDev` na verdade, o que ocasionou em vaios bug inclusive no processo de desligamento automatico do meu PC.
+7. **Perca do meu codigo inicial:**
+   este foi o principal problema, no sabado (07/12) eu estava codando, pois comecei tarde o projeto e acabei por baixar uma biblioteca que ou arquivo que corrompeu meus arquivos e subescrevel as pastas que estavam no meu vs, o que acabou por apagar todo o meu progreço, então tive que recomeçar o programa do 0, tendo apenas 2 dias quando conversei com a professora.
 
 ---
 
 ![Diagrama de Classes](assets/diagrama.png).
 
-## Estrutura do Projeto
+## Estrutura do Projetotarde 
 
 ### **Arquiolog**
 - Gerencia as telas (`MenuScreen`, `GameScreen`, `VictoryScreen`, `GameOverScreen`).
