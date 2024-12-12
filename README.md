@@ -28,16 +28,16 @@ O dessenvolvimento do jogo começou com a ideia de criar um scaperoom mas com o 
    Uma grande dificuldade foi conseguir implementar o quiz neste jogo mas optei por deichalo no final para voltar para o jogo.
 3. **Implementação mais avançada:**
    Ocorreu deu tentar implementar um sistema mais complexo com as respostas, o que deu muito errado e em quanto eu tentava concertar, acabei subescrevendo todo o meu codigo `quiz` e com isso tive que escreve-lo do 0.
+4. **mobilização de inicio e fim:**
+   Demorei para conceguir anexar a logica do jogo parar nos momentos de inicio e de fim de jogo pois necessitava um condicionamento mais rígido.
+5. **A biblioteca:**
+   demorei muito para encontrar os comandos e os `inports` necessários dentre tantos que a gdx e ainda mais que a linguaem disponibiliza, porem aguns estavão dando conflito.
    
-4. **Implementação mais avançada:**
-   Ocorreu deu tentar implementar um sistema mais complexo com as respostas, o que deu muito errado e em quanto eu tentava concertar, acabei subescrevendo todo o meu codigo `quiz` e com isso tive que escreve-lo do 0.
-
-
 ![Diagrama de Classes](diagrama1.png)
 
 # Estrutura do Projeto
 
-## **Main**
+## **Arquiolog**
 - Gerencia todas as telas (`MenuScreen`, `GameScreen`, `VictoryScreen`, `GameOverScreen`).
 - Possui métodos de controle como:
   - `startGame()`
@@ -58,51 +58,7 @@ O dessenvolvimento do jogo começou com a ideia de criar um scaperoom mas com o 
 
 ---
 
-## **Dino**
-- Representa o personagem jogável.
-- Responsabilidades:
-  - Movimentação.
-  - Verificação de colisões (usado por `GameScreen` e `InteractiveObjectManager`).
 
----
-
-## **InteractiveObjectManager**
-- Cria e gerencia **`InteractiveObject`**.
-- Detecta colisões com `Dino`.
-
----
-
-## **InteractiveObject**
-- Contém:
-  - Perguntas.
-  - Opções de resposta.
-- **Usado por:**
-  - `InteractiveObjectManager` para criar objetos interativos.
-  - `QuizManager` para exibir quizzes.
-
----
-
-## **QuizManager**
-- Gerencia o estado do quiz:
-  - Perguntas.
-  - Respostas.
-- Interage diretamente com **`InteractiveObject`**.
-
----
-
-## **GameRenderer**
-- Renderiza o estado visual do jogo, incluindo:
-  - **`Dino`**
-  - **`InteractiveObjectManager`**
-
----
-
-## **Outras Telas**
-### **MenuScreen**, **VictoryScreen**, **GameOverScreen**
-- Herdam de `Screen`.
-- Usadas pelo **`Main`**.
-
-   ## Jogo Rodando: https://youtu.be/OCFOK5X6tuo
 
 
 
@@ -110,14 +66,10 @@ O dessenvolvimento do jogo começou com a ideia de criar um scaperoom mas com o 
    ### Conteúdos usados para o desenvolvimento do jogo:
    - Material da disciplina: https://github.com/andreaInfUFSM/elc117-2024b)
    - Documentação da LibGDX: https://libgdx.com/dev/
-   - Welsiton Ferreira - Desenvolvedor Indie: https://www.youtube.com/playlist?list=PLwlysxDPhB-9uWQBnjGenhONQXS6gzvOp
-   - ChatGpt (para consulta de alguns bugs relacionados a LibGDX)
    - Terminal Root: https://www.youtube.com/watch?v=2bmvlwvnirk
-   - Brent Aureli Codes: https://www.youtube.com/playlist?list=PLZm85UZQLd2SXQzsF-a0-pPF6IWDDdrXt
+   - ChatGpt (para consulta de alguns bugs relacionados a LibGDX e para consultar funcionalidades de bibliotecas)
    - Sprites gerados por I.A. - https://chatgpt.com/g/g-pmuQfob8d-image-generator
 
    ### Inspirações e informações das perguntas e respostas do quiz:
-   - GeoParque Quarta Colônia: https://www.geoparquequartacolonia.com.br/home
-   - GeoParque Caçapava: https://geoparquecacapava.com.br/
-   - Distrito Criativo Centro-Gare: http://www.distritocentrogare.com.br/index.php/pt/
-   - Jardim Botânico da UFSM: https://www.ufsm.br/orgaos-suplementares/jardim-botanico
+   - Material da disciplina: https://github.com/andreaInfUFSM/elc117-2024b)
+   - compilado de videos do Terminal Root: https://www.youtube.com/watch?v=2bmvlwvnirk&list=PLUJBQEDDLNclxZvKTT2Icq9aVBPqLRMCA
