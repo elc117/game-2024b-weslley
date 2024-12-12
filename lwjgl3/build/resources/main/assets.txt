@@ -1,7 +1,0 @@
-dino.png
-fonte.fnt
-fonte.png
-inicio.png
-jeep.png
-pa.png
-terreno.png
