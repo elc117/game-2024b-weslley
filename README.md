@@ -14,7 +14,9 @@
 ## Comentários sobre o Processo de Desenvolvimento
 
 ### Planejamento e Ideia
-O desenvolvimento começou com a ideia de criar um escape room. No entanto, devido a imprevistos, decidi por um jogo mais simples e intuitivo.
+O desenvolvimento começou com a ideia de criar um escape room , um jogo que desafiaria os jogadores a resolver quebra-cabeças e enigmas para escapar de um ambiente fechado. No entanto, devido a imprevistos, como limitações de tempo, recursos e a complexidade envolvidos na implementação de um sistema de lógica robusto para enigmas, decidindo redirecionar o projeto para um jogo mais simples e intuitivo.
+
+Uma nova abordagem focada em um jogo de ação em 2D, onde o jogador controla um veículo para enfrentar desafios e obstáculos em um cenário dinâmico. Esse formato mantém elementos de desafio e interatividade, mas é mais acessível tanto para desenvolvimento quanto para jogabilidade. Além disso, a escolha permite explorar conceitos fundamentais de programação de jogos, como entrega de personagens, detecção de colisões, lógica de pontuação de jogo e mecânicas de jogo.
 
 ### Tecnologias Utilizadas
 - **Linguagem:** Java  
@@ -59,6 +61,16 @@ O desenvolvimento começou com a ideia de criar um escape room. No entanto, devi
   - `GameRenderer`: Renderiza o estado do jogo.
 - **Integrações com `Arquiolog`:**
   - Ajusta vidas e controla progresso do jogo.
+
+---
+
+## Conclusão
+
+Apesar das dificuldades enfrentadas ao longo do desenvolvimento da ArquioLogic , o projeto serviu como uma experiência rica de aprendizado. Desde os desafios técnicos, como a renderização de textos e a integração de diferentes componentes, até os imprevistos, como a perda de código e a necessidade de recomeçar o trabalho com tempo limitado, cada obstáculo contribuído para o amadurecimento técnico e pessoal no contexto da programação de jogos .
+
+Embora o resultado final apresente limitações e a qualidade do código ainda possa ser aprimorado, o processo em si foi revelado extremamente importante. Ele proporcionou um aprofundamento nas tecnologias utilizadas, especialmente na biblioteca LibGDX, e consolidou a capacidade de resolver problemas sob pressão. Além disso, declarou a importância do planejamento, da organização e do uso de boas práticas em projetos de software.
+
+O jogo final, com sua simplicidade e criatividade, reflete um esforço dedicado em superar adversidades e transformar uma ideia complexa inicial em um produto funcional. Assim, ArquioLogic representa não apenas um marco acadêmico, mas também um lembrete de que, mesmo em meio a contratempos, é possível criar algo significativo e crescer com a experiência.
 
 ---
 
