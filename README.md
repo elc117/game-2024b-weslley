@@ -65,13 +65,13 @@ Uma nova abordagem focada em um jogo de ação em 2D, onde o jogador controla um
 
 ## Controles
 
-- UP e W - movimenta o carro para cima;
-- LEFT e A - movimenta o carro para a esquerda;
-- RIGHT e D - movimenta o carro para a direita;
-- DOWN e S - movimenta o carro para baixo;
-- SPACE - atira as pazinhas;
-- ENTER - começa o jogo;
-- CLICK - direcione e click com o mouse na alternativa certa.
+- `UP` e `W` - movimenta o carro para cima;
+- `LEFT` e `A` - movimenta o carro para a esquerda;
+- `RIGHT` e `D` - movimenta o carro para a direita;
+- `DOWN` e `S` - movimenta o carro para baixo;
+- `SPACE` - atira as pazinhas;
+- `ENTER` - começa o jogo;
+- `CLICK` - direcione e click com o mouse na alternativa certa.
 
 ---
 
